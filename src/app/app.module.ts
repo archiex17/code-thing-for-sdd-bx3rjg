@@ -51,6 +51,8 @@ import {HomeComponent} from './home/home.component';
 import { AddLicenceComponent } from './add-licence/add-licence.component';
 import { FilesComponent } from './files/files.component';
 import { SettingsComponent } from './settings/settings.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { VehiclelistComponent } from './vehiclelist/vehiclelist.component';
 
 
 
@@ -61,6 +63,8 @@ const appRoutes: Routes = [
     {path: 'add', component: AddLicenceComponent},
     {path: 'files', component: FilesComponent},
     {path: 'settings', component: SettingsComponent},
+    {path: 'vehicle', component: VehicleComponent},
+    {path: 'vehiclelist', component: VehiclelistComponent},
     {path: '**', component: HomeComponent},
 ];
 
@@ -109,7 +113,7 @@ const appRoutes: Routes = [
             //  { enableTracing: true } // <-- debugging purposes only
         )
     ],  // end imports
-    declarations: [AppComponent, HomeComponent, AddLicenceComponent, FilesComponent, SettingsComponent],
+    declarations: [AppComponent, HomeComponent, AddLicenceComponent, FilesComponent, SettingsComponent, VehicleComponent, VehiclelistComponent],
     bootstrap: [AppComponent],
     providers: [PeopleService],
     entryComponents: [HomeComponent]
