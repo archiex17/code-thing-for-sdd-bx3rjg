@@ -1,31 +1,41 @@
-<!DOCTYPE html>
-<html>
-
 <p>
-Edit Licences here 
+Edit Licence
 </p>
 
-<label for="cars">Choose a Licence: </label>
-<!----LICENCE SELECTOR---->
-<select name="car" id="cars">
-  <option value="Licence 1">Licence 1</option>
-  <option value="Licence 2">Licence 2</option>
-  <option value="Licence 3 ">Licence 3</option>
-  <option value="Licence 4">Licence 4</option>
-</select>
-<button class="licenceselector" onclick="letsdothis()">Edit Licence</button>
-<p id="carsthemovie"></p>
-<script>
- function letsdothis() {
-  var x = document.getElementById("cars").length;
-  document.getElementById("carsthemovie").innerHTML = x;
+<button mat-raised-button color="primary">+ Edit licence</button>
 
-  display(placeholder.jpg)
+<p>
+  <mat-form-field appearance="legacy">
+    <mat-label>First Name</mat-label>
+    <input matInput placeholder="">
+  </mat-form-field>
+</p>
+<p>
+  <mat-form-field appearance="standard">
+    <mat-label>Last Name</mat-label>
+    <input matInput placeholder="">
+  </mat-form-field>
+</p>
 
-document.getElementById(placeholder1.jpg)
+<mat-form-field appearance="fill">
+  <mat-label>Choose a date</mat-label>
+  <input matInput [matDatepicker]="picker">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
 
-}
-</script>
+<p>
+  <mat-form-field appearance="fill">
+    <mat-label>Phone No.</mat-label>
+    <input matInput placeholder="">
+  </mat-form-field>
+</p>
+<p>
+  <mat-form-field appearance="outline">
+    <mat-label>Licence Class</mat-label>
+    <input matInput placeholder="">
+  </mat-form-field>
+</p>
 
 
 

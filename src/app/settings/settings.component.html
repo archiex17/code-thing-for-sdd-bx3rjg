@@ -2,13 +2,29 @@
 Edit Vehicles
 </p>
 
-<label for="cars">Choose a Vehicle: </label>
-<!----LICENCE SELECTOR---->
-<select name="car" id="cars">
-  <option value="Licence 1">Vehicle 1</option>
-  <option value="Licence 2">Vehicle 2</option>
-  <option value="Licence 3 ">Vehicle 3</option>
-  <option value="Licence 4">Vehicle 4</option>
-</select>
-<button class="licenceselector" onclick="letsdothis()">Edit Vehicle</button>
-<p id="carsthemovie"></p>
+<button mat-raised-button color="primary">+ Edit Vehicle</button>
+
+<p>
+  <mat-form-field appearance="legacy">
+    <mat-label>Model</mat-label>
+    <input matInput placeholder="">
+  </mat-form-field>
+</p>
+<p>
+  <mat-form-field appearance="standard">
+    <mat-label>Make</mat-label>
+    <input matInput placeholder="">
+  </mat-form-field>
+</p>
+<p>
+  <mat-form-field appearance="standard">
+    <mat-label>Year</mat-label>
+    <input matInput placeholder="">
+  </mat-form-field>
+</p>
+<p>
+  <mat-form-field appearance="standard">
+    <mat-label>Body</mat-label>
+    <input matInput placeholder="">
+  </mat-form-field>
+</p>
